@@ -101,7 +101,7 @@ Para acessar e decodificar suas mensagens, clique <a href="https://lettyviana.gi
 #
 
 ### **8. Licença**
-[![License](https://img.shields.io/badge/LICENSE-MIT-success)](#)
+[![License](https://img.shields.io/badge/LICENSE-MIT-success)](https://github.com/lettyviana/challenge-one-decodificador-T5/blob/main/LICENSE)
 
 #
 
