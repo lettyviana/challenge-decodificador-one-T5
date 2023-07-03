@@ -1,0 +1,215 @@
+.container__mensagem-entrada {
+    height: 920px;
+    padding: 7rem 2rem 1rem;
+    width: 65%;
+}
+
+.entrada-texto {
+    background-color: var(--azul-claro-100);
+    border: none;
+    color: var(--azul-escuro-300);
+    font-size: 2rem;
+    font-weight: 400;
+    height: 670px;
+    line-height: 150%;
+    outline: none;
+    padding: .5rem;
+    resize: none;
+    width: 90%;
+}
+
+.entrada-texto::placeholder {
+    color: var(--azul-escuro-300);
+}
+
+.entrada-texto:focus {
+    border: 1px solid var(--azul-escuro-300);
+    border-radius: 10px;
+}
+
+.aviso {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    height: 55px;
+    padding-bottom: 1rem;
+}
+
+.aviso span {
+    color: var(--cinza-400);
+    font-size: 1rem;
+    
+}
+
+.container__mensagem-entrada.erro {
+    justify-content: center;
+}
+
+.container__mensagem-entrada.erro span {
+    animation: chacoalha .6s ease-in infinite;
+    color: var(--vermelho);
+    font-size: 1.5rem;
+}
+
+.icone-aviso {
+    height: 24px;
+    width: 24px;
+}
+
+.entrada-texto::-webkit-scrollbar {
+    width: 20px; 
+}
+
+.entrada-texto::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+.entrada-texto::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px var(--azul-escuro-300); 
+}
+
+.entrada-texto::-webkit-scrollbar-thumb:hover {
+    background-color: var(--azul-claro-250);
+}
+
+.botoes {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.botao-criptografar {
+    align-items: center;
+    background-color: var(--azul-escuro-300);
+    border: none;
+    border-radius: 24px;
+    color: var(--branco);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    justify-content: center;
+    line-height: 1.1875rem;
+    height: 67px;
+    transition: all .4s;
+    width: 328px;
+}
+
+.botao-criptografar:hover {
+    background-color: var(--azul-escuro-400);
+    font-size: 1.3rem;
+}
+
+.botao-descriptografar {
+    align-items: center;
+    border: 1px solid var(--azul-escuro-300);
+    border-radius: 24px;
+    color: var(--azul-escuro-300);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    height: 67px;
+    justify-content: center;
+    line-height: 1.1875rem;
+    transition: all .4s;
+    width: 328px;
+}
+
+.botao-descriptografar:hover {
+    background-color: var(--azul-claro-250);
+    font-size: 1.3rem;
+}
+
+@keyframes chacoalha {
+	25% {
+		transform: translateY(4px);
+	}
+	50% {
+		transform: translateY(-4px);
+	}
+	75% {
+		transform: translateY(4px);
+	}
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .container__mensagem-entrada {
+        height: 860px;
+        margin: auto;
+        padding: 4rem 2.5rem .5rem;
+        width: 768px;
+    }
+    
+    .entrada-texto {
+        height: 610px;
+        line-height: normal;
+        width: 100%;
+    }
+    
+    .aviso span {
+        font-size: .75rem;
+    }
+    
+    .container__mensagem-entrada.erro span {
+        font-size: 1.1rem;
+    }
+    
+    .icone-aviso {
+        height: 16px;
+        width: 16px;
+    }
+
+    .container__mensagem-entrada.erro .icone-aviso {
+        animation: chacoalha .6s ease-in infinite;
+        height: 30px;
+        width: 30px;
+    }
+    
+    .botoes {
+        width: 100%;
+    }
+    
+    .botao-criptografar {
+        width: 332px;
+    }
+    
+    .botao-descriptografar {
+        width: 332px;
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 375px) {
+    .container__mensagem-entrada {
+        height: auto;
+        margin: auto;
+        padding: 4rem 1rem .5rem;
+        max-width: 375px;
+    }
+    
+    .entrada-texto {
+        height: 220px;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .botoes {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .botao-criptografar {
+        width: 343px;
+    }
+    
+    .botao-descriptografar {
+        width: 343px;
+    }
+}

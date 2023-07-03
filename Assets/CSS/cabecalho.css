@@ -1,0 +1,27 @@
+.cabecalho {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right: 3rem;
+    padding: 2.5rem;
+    width: 160px;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        float: none;
+        margin-right: 0;
+        width: 31px;
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 375px) {
+    .cabecalho {
+        height: 96px;
+        padding: 0 1rem;
+    }
+}

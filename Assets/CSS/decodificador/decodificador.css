@@ -1,0 +1,24 @@
+@import url("./decodificador__mensagem-entrada.css");
+@import url("./decodificador__mensagem-saida.css");
+
+.container {
+    display: flex;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+        height: 1174px;
+        width: 768px;
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 375px) {
+    .container {
+        display: block;
+        height: 933px;
+        width: 375px;
+    }
+}

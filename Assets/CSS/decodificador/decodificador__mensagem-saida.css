@@ -1,0 +1,186 @@
+.container__mensagem-saida {
+    background-color: var(--branco);
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    display: block;
+    height: 880px;
+    position: absolute;
+    right: 3.5rem;
+    top: 30px;
+    width: 460px;
+}
+.mensagem-saida {
+    display: block;
+    height: 780px;
+    margin: auto;
+    position: relative;
+    width: 380px;
+}
+
+.ilustracao__lupa {
+    background-image: url("../../Img/menino-lupa.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 375px;
+    margin: 7rem auto 3rem;
+    width: 375px;
+}
+
+.textos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.textos .titulo {
+    color: var(--cinza-500);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.textos .descricao {
+    color: var(--cinza-400);
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container__mensagem-resultado {
+    background-color: var(--branco);
+    border-radius: 32px;
+    display: none;
+    height: 880px;
+    padding: 2rem 2rem;
+    position: absolute;
+    right: 3.5rem;
+    top: 30px;
+    width: 460px;
+}
+
+.mensagem-decodificada {
+    color: var(--cinza-400);
+    font-size: 1.3rem;
+    height: 730px;
+    position: relative;
+    width: 400px;
+}
+
+.botao-copiar {
+    border: 1px solid var(--azul-escuro-300);
+    border-radius: 24px;
+    bottom: 25px;
+    color: var(--azul-escuro-300);
+    cursor: pointer;
+    display: block;
+    font-size: 1.2rem;
+    height: 67px;
+    left: 66px;
+    line-height: 1.1875rem;
+    padding: 21px 20px;
+    position: absolute;
+    transition: all .4s;
+    width: 328px;
+}
+
+.botao-copiar:hover {
+    background-color: var(--azul-claro-250);
+    font-size: 1.3rem;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .container__mensagem-saida {
+        height: 135px;
+        left: 2.5rem;
+        top: 990px;
+        width: 688px;
+    }
+    .mensagem-saida {
+        max-height: 133px;
+        padding: 2rem 1rem;
+        width: 688px;
+    }
+    
+    .ilustracao__lupa {
+        display: none;
+    }
+    
+    .textos {
+        gap: 1rem;
+    }
+    
+    .textos .titulo {
+        font-size: 1.5rem;
+    }
+    
+    .textos .descricao {
+        font-size: 1rem;
+    }
+    
+    .container__mensagem-resultado {
+        height: 343px;
+        left: 2.5rem;
+        top: 940px;
+        width: 688px;
+    }
+    
+    .mensagem-decodificada {
+        display: block;
+        font-size: 1.5rem;
+        height: 150px;
+        max-width: 680px;
+        width: 100%;
+    }
+    
+    .botao-copiar {
+        left: 33px;
+        line-height: 0;
+        max-width: 624px;
+        width: 100%;
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 375px) {
+    .container__mensagem-saida {
+        height: 186px;
+        left: 1.5rem;
+        position: absolute;
+        top: 640px;
+        width: 327px;
+    }
+    .mensagem-saida {
+        font-size: 1.5rem;
+        max-height: none;
+        width: 327px;
+    }
+    .ilustracao__lupa {
+        display: none;
+    }
+    .container__mensagem-resultado {
+        height: 380px;
+        left: 1rem;
+        padding: 1.5rem;
+        top: 630px;
+        width: 343px;
+    }
+    
+    .mensagem-decodificada {
+        height: 135px;
+        max-width: 343px;
+    }
+    
+    .botao-copiar {
+        left: 10px;
+        line-height: 0;
+        max-width: 323px;
+        width: 100%;
+    }
+    
+    .botao-copiar:hover {
+        background-color: var(--azul-claro-250);
+        font-size: 1.3rem;
+    }
+}

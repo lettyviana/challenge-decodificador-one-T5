@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Decodificador Alura</title>
+        <link rel="icon" type="image/x-icon" href="./Assets/Img/favicon.svg">
+        <link rel="stylesheet" href="./Assets/CSS/base.css" />
+    </head>
+    <body>
+        <header class="cabecalho">
+            <img class="cabecalho__logo" src="./Assets/Img/cabecalho/logo-alura.svg" alt="Logotipo da Alura"/>
+        </header>
+        <main>
+            <div class="container">
+                <div class="container__mensagem-entrada">
+                    <textarea class="entrada-texto" placeholder="Digite seu texto"></textarea>
+                    <div class="aviso">
+                        <ion-icon class="icone-aviso" name="alert-circle"></ion-icon> <span>Apenas letras minúsculas e sem acento.</span>
+                    </div>
+                    <div class="botoes">
+                        <button class="botao-criptografar">Criptografar</button>
+                        <button class="botao-descriptografar">Descriptografar</button>
+                    </div>
+                </div>
+                <div class="container__mensagem-saida">
+                    <div class="mensagem-saida">
+                        <div class="ilustracao__lupa"></div>
+                        <div class="textos">
+                            <p class="titulo">Nenhuma mensagem encontrada</p>
+                            <p class="descricao">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__mensagem-resultado">
+                    <!-- <div class="container__resultado"> -->
+                        <span class="mensagem-decodificada"></span>
+                        <button class="botao-copiar">Copiar</button>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </main>
+        <footer>
+            <div class="container__rodape">
+                <div class="conteudo__rodape">
+                    <p class="rodape__texto">Desenvolvido por Letícia Viana - 2023 - Challenge ONE (Oracle Next Education, desenvolvido pela Oracle em parceria com a Alura) |</p>
+                    <div class="rodape__sociais">
+                        <a href="https://www.linkedin.com/in/leticiaviana-trad-dev/" target="_blank"><ion-icon class="icones" name="logo-linkedin"></ion-icon></a> <a href="https://github.com/lettyviana" target="_blank"><ion-icon class="icones" name="logo-github"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+            <script type="module" src="./Assets/JS/main.js"></script>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
